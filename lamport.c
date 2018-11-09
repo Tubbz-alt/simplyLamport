@@ -1,8 +1,8 @@
 /**
     Name        : Why should I name it? I's my son, but actually I hate it ¯\_(ツ)_/¯
     Author      : Arget
-    Version     : 0.5a
-    Date        : 16/11/2017
+    Version     : 1.0
+    Date        : 09/11/2018
     Description : A simple implementation of the Lamport-Diffie signature
     Notes       : Compile with `gcc -o lamport lamport.c base64.c -lcrypto'
 */
