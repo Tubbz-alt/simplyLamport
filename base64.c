@@ -1,3 +1,7 @@
+/*** A bit modified by Arget for the Lamport implementation:
+   just commented line 186, and own version of Base64decode_len() ***/
+
+
 /*
  * Copyright (c) 2003 Apple Computer, Inc. All rights reserved.
  *
@@ -81,10 +85,6 @@
 
 /* Base64 encoder/decoder. Originally Apache file ap_base64.c
  */
-
-/* A bit modified by Arget for the Lamport implementation:
-   just commented line 186, and own version of Base64decode_len() */
-
 
 #include <string.h>
 #include "base64.h"
