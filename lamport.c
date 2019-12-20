@@ -12,12 +12,9 @@
 #include <string.h>
 #include "lamport.h"
 
-int genpvk(uint8_t privkey[HASH_SIZE_BITS][2][HASH_SIZE_BYTES],       // OUT
-           void (*hashfunc)(uint8_t dst[HASH_SIZE_BYTES],             // IN
-                            const uint8_t src[HASH_SIZE_BYTES]))
+int genpvk(uint8_t privkey[HASH_SIZE_BITS][2][HASH_SIZE_BYTES])        // OUT
 {
     FILE* f;
-    int i;
 
     // Obtaining random data from a secure source to be used as the private key
     if(!(f = fopen(RANDOMSRC, "r")) ||

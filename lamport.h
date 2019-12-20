@@ -24,9 +24,7 @@ extern int hashSizeBits;
 
 /* Functions */
 
-int genpvk(uint8_t privkey[HASH_SIZE_BITS][2][HASH_SIZE_BYTES],
-           void (*hashfunc)(uint8_t dst[HASH_SIZE_BYTES],
-                            const uint8_t src[HASH_SIZE_BYTES]));
+int genpvk(uint8_t privkey[HASH_SIZE_BITS][2][HASH_SIZE_BYTES]);
 
 void sign(const uint8_t privkey[HASH_SIZE_BITS][2][HASH_SIZE_BYTES],
           const uint8_t hash[HASH_SIZE_BYTES],

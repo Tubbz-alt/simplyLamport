@@ -145,7 +145,7 @@ int main(int argc, char** argv)
         puts("[+] Calculating Lamport keypair . . .");
         
         puts("[+] Obtaining random data from a secure source (may take a while)");
-        if(genpvk(key, &HASH))
+        if(genpvk(key))
             panic("Error in genpvk() reading from the random source", -1, RANDOMSRC);
 
         if(argc > 2) // If the user specified the outfiles
